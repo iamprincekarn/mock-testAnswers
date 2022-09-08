@@ -1,0 +1,179 @@
+@keyframes Prince {
+    0%{
+        background-color: rgb(212, 179, 179);
+    }
+    25%{
+        background-color: rgb(199, 201, 177);
+    }
+    50%{
+        background-color: rgb(191, 221, 194);
+    }
+    75%{
+        background-color: rgb(169, 189, 207);
+    }
+    100%{
+        background-color: rgb(204, 190, 203);
+    }
+}
+/* *{
+    animation: Prince 2s infinite ;
+} */
+/* utility classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Baloo Da 2', cursive;
+}
+.h-secondary{
+    font-size: 1.9rem;
+    padding: 12px;
+    font-family: 'Baloo Da 2', cursive;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;margin: 17px;
+    font-size: 1.3rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(197, 92, 92);
+    transform: scale(1.05);
+    transition: all 0.8s;
+}
+.center{
+    text-align: center;
+}
+
+
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 6rem 0 0 0;
+}
+/* naviagtion bar */
+#navbar{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    position: relative; /* for decreasing the length of heihght navbr black bg comes due to before selector*/
+    position: sticky;
+    top: 0px;
+}
+#logo{
+    position: relative;
+    top: 1px;
+    left: 50px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: #494644;
+    position: absolute;
+    top: 0px;
+    height: 85%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+/* navigation bar: logo and image */
+#navbar #logo{
+    margin: 2px 50px;
+    /* border: 2px solid red; */
+    height: 115px;
+    width: 133px;
+}
+#navbar img{
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+#navbar ul{
+    display: flex;
+}
+ 
+#navbar ul li{
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    transform: scale(1.1);
+    font-size: 19px;
+    transition: all 1s;
+}
+
+#navbar #linkedin{
+    position: relative;
+    left: 950px;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    margin-bottom: 161px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    /* background: url('bg.jpg') no-repeat center center/cover; */
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('bg.jpg') ;
+    height: 107%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Baloo Da 2', cursive;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+#htu-section{
+    height: 350px;
+}
+#htu-steps{
+    width: 300px;
+    margin: auto;
+}
+#tArea{
+    padding: 2px;
+}
+
+#madeby{
+    margin: 30px;
+    font-size: 20px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
